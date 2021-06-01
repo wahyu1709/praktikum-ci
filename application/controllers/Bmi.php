@@ -78,6 +78,32 @@ class Bmi extends CI_Controller{
         $this->load->view('bmi/index',$data);
         $this->load->view('layout/footer');
     }
+
+    public function list(){
+        $this->load->model('bmi_pasien');
+
+        $patiens = $this->bmi_pasien->getAll();
+        $data['patiens'] = $patiens;
+
+        $this->load->view('layout/header');
+        $this->load->view('bmi/list', $data);
+        $this->load->view('layout/footer');
+    }
+
+    public function detail($id){
+        $this->load->model('pasien_model');
+        $patien = $this->pasien_model->getById($id);
+        if($patien == null){
+            echo "data tidak ada";
+        }
+        else{
+            $data['patien'] = $patien;
+
+            $this->load->view('layout/header');
+            $this->load->view('bmi/detail', $data);
+            $this->load->view('layout/footer');
+        }
+    }
 }
 
 ?>

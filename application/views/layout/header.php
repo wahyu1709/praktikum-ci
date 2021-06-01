@@ -28,8 +28,8 @@
       <div class="list-group list-group-flush">
         <a href="Pasien" class="list-group-item list-group-item-action bg-light">Pasien</a>
         <a href="Bmi" class="list-group-item list-group-item-action bg-light">BMI Pasien</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+        <a href="Pasien/list" class="list-group-item list-group-item-action bg-light">List Pasien</a>
+        <a href="Bmi/list" class="list-group-item list-group-item-action bg-light">List BMI Pasien</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
       </div>
