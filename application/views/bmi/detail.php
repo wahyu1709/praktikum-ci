@@ -2,20 +2,22 @@
 <div>
     <table class="table table-striped">
         <tr>
-            <td>Kode Pasien</td><td>:</td><td><?=$patien->kode?></td>
+            <td>Tanggal</td><td>:</td><td><?=$patien->tanggal?></td>
         </tr>
         <tr>
-            <td>Nama</td><td>:</td><td><?=$patien->nama?></td>
+            <td>Berat</td><td>:</td><td><?=$patien->berat?></td>
         </tr>
         <tr>
-            <td>Gender</td><td>:</td><td><?=$patien->gender?></td>
+            <td>Tinggi</td><td>:</td><td><?=$patien->tinggi?></td>
         </tr>
         <tr>
-            <td>Tempat, Tgl Lahir</td><td>:</td>
-            <td><?=$patien->tmp_lahir?>, <?=$patien->tgl_lahir?></td>
+            <td>BMI</td><td>:</td><td><?=$patien->bmi?></td>
         </tr>
         <tr>
-            <td>Email</td><td>:</td><td><?=$patien->email?></td>
+            <td>Status BMI</td><td>:</td><td><?=$patien->status_bmi?></td>
+        </tr>
+        <tr>
+            <td>Catatan</td><td>:</td><td><?=$patien->catatan?></td>
         </tr>
     </table>
 </div>

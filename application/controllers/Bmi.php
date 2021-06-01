@@ -91,8 +91,8 @@ class Bmi extends CI_Controller{
     }
 
     public function detail($id){
-        $this->load->model('pasien_model');
-        $patien = $this->pasien_model->getById($id);
+        $this->load->model('bmi_pasien');
+        $patien = $this->bmi_pasien->getById($id);
         if($patien == null){
             echo "data tidak ada";
         }
